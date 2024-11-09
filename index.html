@@ -9,7 +9,9 @@
         color: var(--tg-theme-text-color);
         background: var(--tg-theme-bg-color);
     }
-	
+
+    /* var(--tg-theme-secondary-bg-color) */
+  
     .books {
         background-color: var(--tg-theme-secondary-bg-color);
         border: none;
@@ -17,6 +19,24 @@
         max-width: 100%;
         height: 970px;
         padding-top: 7px;
+    }
+
+    .Bookev {
+        background-color: var(--tg-theme-secondary-bg-color);
+        border: none;
+        border-radius: 15px;
+        max-width: 100%;
+        height: 45px;
+        padding-top: 7px;
+    }
+
+    .links {
+        background-color: var(--tg-theme-secondary-bg-color);   
+        border: none;
+        border-radius: 15px;  
+        max-width: 100%;
+        height: 175px;
+        padding: 10px;
     }
 
     .container {
@@ -122,6 +142,7 @@
         font-family: "Open Sans", sans-serif;   
         font-size: 20px;
         margin-bottom: 5px;
+        margin-top: 15px;
     }
 
     .description {
@@ -153,10 +174,13 @@
         text-decoration: none;
     }
 
+
     #nav a {
         display: inline;
         color: var(--tg-theme-button-text-color);
         font-family: "Open Sans", sans-serif;
+        margin-bottom: -2px;
+        font-size: 40px;
     }
 
     #nav a:hover {
@@ -187,15 +211,28 @@
         bottom: 0;
         border-top: 2px solid var(--tg-theme-text-color);
     }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 40
+    }
+</style>
+</style>
+</style>
+</style>
 </style>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ONFObot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONFObot</title>
 </head>
 <body>
     <div class="container">
+        <hr class="separator">
         <p class="text_ali">Все книги</p>
         <div class="books">
             <br>
@@ -239,26 +276,33 @@
                 <a href="#" class="link_more">Ещё ></a>
             </div>
         </div>
-        <hr class="separator">
         <p class="text_ali">Книги с Bookev</p>
-        <p class="description">Книг с Bookev временно ещё нету, но они обязательно появятся после UPFRONT 2025!</p>
-        <hr class="separator">
+        <div class="Bookev">
+            <p class="description">Книг с Bookev временно ещё нету, но они обязательно появятся после UPFRONT 2025!</p>
+        </div>
         <p class="text_ali">Ссылки</p>
-        <p class="description"><strong>ONFObot</strong> - это книжный бот в Telegram, в нём есть как эксклюзивы, так и перезаливы книг. Также вы можете опубликовывать свои книги в самом боте.</p>
-        <button class="btn_tg" id="btn"><a href="https://t.me/ONFOstudio" class="btn_a">Telegram-канал</a></button><br>
-        <button class="btn2" id="btn1">Поддержка</button>
+        <div class="links">
+            <p class="description"><strong>ONFObot</strong> - это книжный бот в Telegram, в нём есть как эксклюзивы, так и перезаливы книг. Также вы можете опубликовывать свои книги в самом боте.</p>
+            <button class="btn_tg" id="btn"><a href="https://t.me/ONFOstudio" class="btn_a">Telegram-канал</a></button><br>
+            <button class="btn2" id="btn1">Поддержка</button>
+            <br>
+            <a href="http://t.me/GroAlexPixel_bot/app" class="link_more_a">Про разработчика ></a>
+        </div>
         <br>
-        <a href="http://t.me/GroAlexPixel_bot/app" class="link_more_a">Про разработчика ></a>
         <hr class="separator">
         <p class="description">ONFObot [ beta ] v0.0</p>
         <br>
         <br>
         <br>
     </div>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=home" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=logout" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=share" />
 </body>
 <ul id="nav">
     <a class="nav_one">Главная</a>
+    <a>Книги</a>
     <a>Bookev</a>
     <a class="nav_three">Ссылки</a>
 </ul>
